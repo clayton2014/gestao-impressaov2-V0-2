@@ -83,9 +83,9 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
           {loading ? "Entrando..." : "Entrar"}
         </button>
         <div className="text-center mt-4">
-          <a href="#" className="text-xs text-violet-600 hover:text-violet-700 transition-colors">
+          <button type="button" className="text-xs text-violet-600 hover:text-violet-700 transition-colors">
             Esqueceu sua senha?
-          </a>
+          </button>
         </div>
       </form>
     </div>

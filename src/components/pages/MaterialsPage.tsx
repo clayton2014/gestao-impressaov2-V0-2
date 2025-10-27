@@ -309,7 +309,7 @@ export default function MaterialsPage() {
                             <AlertDialogHeader>
                               <AlertDialogTitle>Confirmar exclusão</AlertDialogTitle>
                               <AlertDialogDescription>
-                                Tem certeza que deseja excluir o material "{material.name}"? Esta ação não pode ser desfeita.
+                                Tem certeza que deseja excluir o material &quot;{material.name}&quot;? Esta ação não pode ser desfeita.
                               </AlertDialogDescription>
                             </AlertDialogHeader>
                             <AlertDialogFooter>

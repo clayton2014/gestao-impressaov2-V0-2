@@ -746,7 +746,7 @@ export default function ServicesPage() {
                             <AlertDialogHeader>
                               <AlertDialogTitle>Confirmar exclusão</AlertDialogTitle>
                               <AlertDialogDescription>
-                                Tem certeza que deseja excluir o serviço "{service.name}"? Esta ação não pode ser desfeita.
+                                Tem certeza que deseja excluir o serviço &quot;{service.name}&quot;? Esta ação não pode ser desfeita.
                               </AlertDialogDescription>
                             </AlertDialogHeader>
                             <AlertDialogFooter>
