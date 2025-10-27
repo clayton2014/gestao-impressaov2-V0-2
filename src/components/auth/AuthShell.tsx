@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { SettingsDAO } from "@/lib/dao";
 
@@ -44,11 +45,7 @@ export default function AuthShell({ children }: { children: React.ReactNode }) {
         <div className="w-full max-w-md">
           <div className="mb-6 text-center text-white">
             <div className="mx-auto mb-3 h-14 w-14 rounded-xl bg-white/15 backdrop-blur flex items-center justify-center ring-1 ring-white/25">
-              <img
-                src={settings.company_logo_url}
-                alt={settings.company_name}
-                className="h-8 w-8 object-contain"
-                onError={(e) => { 
+              <Image src="" alt="" width={64} height={64} className="h-8 w-8 object-contain" /> { 
                   (e.currentTarget as HTMLImageElement).style.display = "none"; 
                   // Mostrar iniciais como fallback
                   const container = e.currentTarget.parentElement;

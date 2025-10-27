@@ -266,7 +266,7 @@ export default function InksPage() {
                             <AlertDialogHeader>
                               <AlertDialogTitle>Confirmar exclusão</AlertDialogTitle>
                               <AlertDialogDescription>
-                                Tem certeza que deseja excluir a tinta &quot;{ink.name}&quot;? Esta ação não pode ser desfeita.
+                                Tem certeza que deseja excluir a tinta "{ink.name}"? Esta ação não pode ser desfeita.
                               </AlertDialogDescription>
                             </AlertDialogHeader>
                             <AlertDialogFooter>

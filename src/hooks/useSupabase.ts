@@ -23,7 +23,7 @@ export function useSupabaseAuth() {
     )
 
     return () => subscription.unsubscribe()
-  }, [])
+  }, [, fetchData])
 
   const signIn = async (email: string, password: string) => {
     const { error } = await supabase.auth.signInWithPassword({
@@ -122,7 +122,7 @@ export function useSupabaseData<T>(
 
   useEffect(() => {
     fetchData()
-  }, [table, JSON.stringify(options)])
+  }, [table, JSON.stringify(options), fetchData])
 
   const refetch = () => fetchData()
 

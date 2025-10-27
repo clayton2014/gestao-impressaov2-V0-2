@@ -108,7 +108,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     const savedC = localStorage.getItem("pm:currency");
     if (savedL) setLocale(savedL);
     if (savedC) setCurrency(normalizeCurrency(savedC, savedL || locale));
-  }, []);
+  }, [locale]);
 
   useEffect(() => localStorage.setItem("pm:locale", locale), [locale]);
   useEffect(() => localStorage.setItem("pm:currency", currency), [currency]);

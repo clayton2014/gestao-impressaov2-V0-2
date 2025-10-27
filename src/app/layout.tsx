@@ -6,9 +6,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  metadataBase: new URL('http://localhost:3000'),
-  title: { default: 'Gráfica Digital Pro', template: '%s | Gráfica Digital Pro' },
-    description: 'Sistema completo para gestão de gráfica digital',
+  title: 'Gráfica Digital Pro',
+  description: 'Sistema completo para gestão de gráfica digital',
 };
 
 export default function RootLayout({
@@ -17,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" suppressHydrationWarning>
       <head>
         <Script id="theme-no-flash" strategy="beforeInteractive">{`
           (function() {
@@ -31,8 +30,7 @@ export default function RootLayout({
         `}</Script>
       </head>
       <body className={`${inter.className} min-h-screen antialiased`}>
-        <a href="#content" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 bg-black text-white px-3 py-2 rounded">Pular para conteúdo</a>
-{children}
+        {children}
         <Toaster position="top-right" />
       </body>
     </html>
