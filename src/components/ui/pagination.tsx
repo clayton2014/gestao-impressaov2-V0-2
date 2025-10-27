@@ -61,7 +61,7 @@ function PaginationLink({
         className
       )}
       {...props}
-    ><span className=\"sr-only\">Link</span></a>
+    ><span className="sr-only">Link</span></a>
   )
 }
 
